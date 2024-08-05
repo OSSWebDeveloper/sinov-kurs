@@ -1,0 +1,19 @@
+<<<<<<< HEAD
+Django     == 4.0
+pillow == 10.4.0
+pip        == 24.1
+psycopg2==2.9.9
+setuptools == 70.1.0
+sqlparse   == 0.5.0
+tzdata     == 2024.1
+wheel      == 0.43.0
+=======
+Django     == 4.0
+pillow     == 10.4.0
+pip        == 24.1
+psycopg2   == 2.9.9
+setuptools == 70.1.0
+sqlparse   == 0.5.0
+tzdata     == 2024.1
+wheel      == 0.43.0
+>>>>>>> 28d6a3b6da76bbc0a0775e5d5aff76df3cc40946

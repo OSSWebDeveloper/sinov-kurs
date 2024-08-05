@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block head %}
+<title>Ro'yxatdan o'tish sahifasi</title>
+{% endblock %}
+
+{% block content %}
+<form action="{% url 'register' %}" method="POST">
+    {% csrf_token %}
+    <p>Username label</p>
+    <label for="">{{form.username.label}}</label>
+    <p>Ism</p>
+    <span class="input">{{form.first_name}}</span>
+    <p>Familya</p>
+    <span class="input">{{form.last_name}}</span>
+    <p>username</p>
+    <span class="input">{{form.username}}</span>
+    <p>email</p>
+    <span class="input">{{form.email}}</span>
+    <p>parol</p>
+    <span class="input">{{form.password1}}</span>
+    <p>Parolni tasdiqlash</p>
+    <span class="input">{{form.password2}}</span>
+    <button>Ro`yhatdan o`tish</button>
+    <button><a href="{% url 'login' %}">Kirish</button></a>
+    <button><a href="{% url 'index' %}">
+            Asosiy sahifa
+    </a></button>
+</form>
+
+
+{% endblock %}
